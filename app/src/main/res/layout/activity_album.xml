@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Album"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="385dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="#020B19" />
+
+        <RelativeLayout
+            android:id="@+id/R1"
+            android:layout_width="292dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="60dp">
+
+            <Button
+                android:id="@+id/bt_open"
+                android:layout_width="135dp"
+                android:layout_height="58dp"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="157dp"
+                android:layout_marginRight="157dp"
+                android:background="@drawable/bg_button"
+                android:text="Open Camera"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#042540"
+        app:menu="@menu/item_menu_navi"
+        android:id="@+id/bottom_navigation"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"/>
+
+</RelativeLayout>
